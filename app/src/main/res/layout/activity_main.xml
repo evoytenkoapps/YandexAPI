@@ -11,8 +11,48 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ru.evoytenkoapps.yandexapi.MainActivity">
 
-    <TextView
+
+    <Button
+        android:text="@string/GetResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:id="@+id/btnGetResult"
+        android:layout_below="@+id/btnAddToBest"
+        android:layout_toEndOf="@+id/btnAddToBest"
+        android:layout_marginStart="911dp"
+        android:layout_marginTop="568dp"/>
+
+    <Button
+        android:text="@string/AddToBest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddToBest"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="1323dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_above="@+id/btnAddToBest"
+        android:layout_alignEnd="@+id/btnAddToBest"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/edttxtEnterText"
+        android:layout_alignBottom="@+id/btnAddToBest"
+        android:layout_toEndOf="@+id/edttxtEnterText"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="327dp"/>
+
+
 </RelativeLayout>
